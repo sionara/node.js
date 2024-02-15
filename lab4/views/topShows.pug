@@ -1,0 +1,16 @@
+extends layout 
+
+block main-content 
+  h1.page-title Top 15 Shows 
+  table 
+    tr
+      th show 
+      th year 
+    each show in showslist 
+      - url = `https://www.imdb.com/title/${show.ids.imdb}`
+      tr 
+        td
+          a(href=url) #{show.title}
+        td
+          #{show.year}
+        
