@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Test website
+    link(rel="stylesheet", type="text/css", href="/css/styles.css")
+    block scripts 
+      script(src="/js/common.js")
+  body
+    header#header 
+      .header-content <!--this is a div -->
+        h2#site-name 
+          a(href="/") Test Site 
+    main#main 
+      block layout-content 
+    footer#footer 
+      p &copy; Copyright HTTP5222, 2024.
